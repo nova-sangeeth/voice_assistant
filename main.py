@@ -51,10 +51,10 @@ def respond(voice_data):
         url = 'https://google.nl/maps/place/' + location + '/&amp;'
         webbrowser.get().open(url)
         print('The location is' + location)
-    if 'weather' in voice_data:
-        weather = record_audio('Tell me your location.')
-        url = 'https://www.accuweather.com/en/browse-locations' + location 
-        webbrowser.get().open(url)
+    # if 'weather' in voice_data:
+    #     weather = record_audio('Tell me your location.')
+    #     url = 'https://www.accuweather.com/en/browse-locations' + location 
+    #     webbrowser.get().open(url)
         print('Here are the results')
     if 'exit' in voice_data:
         exit()
